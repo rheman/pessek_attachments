@@ -1,0 +1,38 @@
+{
+	"name": "pessek/pessek_attachments",
+	"type": "elgg-plugin",
+	"version": "4.0",
+	"description": "File attachments for Elgg",
+	"keywords": [
+		"elgg", "plugin", "files", "attachments"
+	],
+	"license": "proprietary",
+	"authors": [
+		{
+			"name": "Hermand PESSEK",
+			"email": "rhemandaddy@gmail.com"
+		}
+	],
+	"extra": {
+		"installer-name": "pessek_attachments"
+	},
+	"require": {
+		"php": ">=7.4",
+		"composer/installers": "^1.0.8",
+		"hypejunction/acl_builder_api": "~1.0"
+	},
+	"autoload": {
+		"psr-0": {
+			"": "classes/"
+		}
+	},
+	"repositories": [
+		{
+            		"type": "composer",
+            		"url": "https://asset-packagist.org"
+		}
+	],
+        "conflict": {
+                "elgg/elgg": "<4.0"
+        }
+}
